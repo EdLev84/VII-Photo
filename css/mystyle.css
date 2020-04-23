@@ -236,3 +236,39 @@ main .one .about-main .about-blocks .about-block-right .about-skills-button butt
   font-size: 16px;
   font-weight: 400;
 }
+
+main .two .clients-main {
+  width: 100%;
+  background-color: rgba(59, 61, 104, 0.9);
+  background-image: url(../img/clients/client-bg.png);
+  min-height: 295px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+main .two .clients-main .clients-block {
+  max-width: 1178px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+main .two .clients-main .clients-block h3 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+main .two .clients-main .clients-block .clients {
+  max-width: 1178px;
+  min-height: 75px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
