@@ -1,0 +1,234 @@
+$color1: #f2c200
+$color2: #2b2d5c
+$color3: #000000
+$color4: #ffffff
+$transition: all 0.5s ease-in-out 0.3s
+
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+
+a
+    text-decoration: none
+
+
+
+// HEADER
+header
+
+    .header-main
+        background-image: url(../img/header/header-bg.png)
+        background-size: cover
+        width: 100%
+        max-width: 1600px
+        min-height: 898px
+        background-repeat: no-repeat
+
+        .header-blocks
+            min-height: 898px
+
+
+            // STYLES HEADER LOGO AND MENU
+            .header-logo-menu
+                width: 100%
+                max-width: 1169px
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                margin: 0 auto
+                @media screen and(max-width: 1024px)
+                    justify-content: center
+
+                .header-logo
+                    width: 197px
+                    display: flex
+                    align-items: baseline
+                    font-size: 20px
+                    color: $color4
+                    margin-top: 65px
+
+                    img
+                        margin-right: 9px
+
+                .header-menu
+                    width: 345px
+                    display: flex
+                    align-items: center
+                    justify-content: space-around
+                    margin-top: 65px
+                    @media screen and(max-width: 360px)
+                        padding-right: 15px
+                    @media screen and(max-width: 320px)
+                        width: 300px
+
+                    a
+                        color: $color4
+                        padding: 0 2px 2px 2px
+                        transition: $transition
+
+                    a:hover
+                        border-bottom: 1px solid $color1
+            // STYLES HEADER LOGO AND MENU
+
+
+            // STYLES HEADER IMG-PLUS AND HEADLINE
+            .header-plus-headline
+                width: 100%
+                max-width: 1169px
+                margin: 0 auto
+                min-height: 503px
+                @media screen and(max-width: 1024px)
+                    text-align: center
+
+                img
+                    margin: 52px 0 54px 0
+
+                .header-headline
+                    @media screen and(max-width: 320px)
+                        padding-right: 20px
+
+                    h1
+                        font-size: 60px
+                        color: $color4
+
+                    p
+                        font-size: 20px
+                        color: $color4
+                        margin: 37px 0 49px 0
+                        padding-right: 10px
+
+                    button
+                        width: 220px
+                        height: 60px
+                        background-color: $color1
+                        color: $color3
+                        font-size: 16px
+                        text-align: center
+                        border-radius: 40px
+                        border: none
+                        transition: $transition
+
+                    button:hover
+                        border: 1px solid $color1
+                        background-color: $color2
+                        color: $color4
+            // STYLES HEADER IMG-PLUS AND HEADLINE
+
+
+            // STYLES HEADER TWO IMG SCROOL AND LINE-SOCIAL
+            .header-scroll-line-social
+                max-width: 814px
+                width: 100%
+                display: flex
+                align-items: flex-end
+                justify-content: space-between
+                float: right
+                margin-top: 70px
+                @media screen and(max-width: 430px)
+                    float: none
+                    flex-direction: column
+                    align-items: center
+
+                img:nth-child(1)
+                    @media screen and(max-width: 1024px)
+                        padding-left: 10px
+
+            // STYLES HEADER TWO IMG SCROOL AND LINE-SOCIAL
+
+// HEADER
+
+
+
+
+
+// MAIN
+main
+
+
+
+    // FIRST BLOCK
+    .one
+
+        // STYLES FIRST BLOCK ABOUT WITH IMG AND BLOCK
+        .about-main
+            width: 100%
+            background-color: #f7f7fc
+
+            .about-blocks
+                max-width: 1385px
+                width: 100%
+                display: flex
+                flex-wrap: wrap
+                align-items: flex-start
+                justify-content: space-between
+
+                // STYLES FIRST BLOCK ABOUT-LEFT
+                .about-block-left
+                    max-width: 514px
+                    height: 730px
+                    margin: 100px 0 100px 0
+                // STYLES FIRST BLOCK ABOUT-LEFT
+
+                // STYLES FIRST BLOCK ABOUT-RIGHT
+                .about-block-right
+                    max-width: 736px
+                    width: 100%
+                    margin-top: 168px
+
+                    .about-headline
+                        max-width: 728px
+                        width: 100%
+                        min-height: 192px
+
+                        h2
+                            font-size: 40px
+                            color: $color2
+
+                        p
+                            font-size: 16px
+                            color: $color3
+                            min-height: 123px
+                            margin: 38px 0 40px 0
+                            line-height: 1.5
+
+                    .about-skills-button
+                        max-width: 736px
+                        width: 100%
+                        min-height: 335px
+
+                        h3
+                            margin-bottom: 40px
+                            font-size: 26px
+                            color: $color2
+
+
+                        .about-skills
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            margin-bottom: 60px
+
+                            p
+                                margin-bottom: 20px
+
+                        button
+                            width: 284px
+                            height: 65px
+                            color: $color4
+                            background-color: $color2
+                            border-radius: 40px
+                            border: none
+                            text-align: center
+                            font-size: 16px
+                            font-weight: 400
+                // STYLES FIRST BLOCK ABOUT-RIGHT
+
+        // STYLES FIRST BLOCK ABOUT WITH IMG AND BLOCK
+
+    // FIRST BLOCK
+
+// MAIN
