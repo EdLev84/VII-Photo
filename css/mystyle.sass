@@ -187,6 +187,7 @@ main
                         h2
                             font-size: 40px
                             color: $color2
+                            padding: 0 5px 0 10px
 
                         p
                             font-size: 16px
@@ -194,11 +195,17 @@ main
                             min-height: 123px
                             margin: 38px 0 40px 0
                             line-height: 1.5
+                            padding: 0 5px 0 10px
 
                     .about-skills-button
                         max-width: 736px
                         width: 100%
                         min-height: 335px
+                        @media screen and(max-width: 1024px)
+                            display: flex
+                            flex-wrap: wrap
+                            align-items: center
+                            justify-content: center
 
                         h3
                             margin-bottom: 40px
@@ -211,6 +218,9 @@ main
                             align-items: center
                             justify-content: space-between
                             margin-bottom: 60px
+                            @media screen and(max-width: 1024px)
+                                justify-content: space-around
+                                flex-wrap: wrap
 
                             p
                                 margin-bottom: 20px
@@ -225,6 +235,8 @@ main
                             text-align: center
                             font-size: 16px
                             font-weight: 400
+                            @media screen and(max-width: 1024px)
+                                margin-bottom: 20px
                 // STYLES FIRST BLOCK ABOUT-RIGHT
 
         // STYLES FIRST BLOCK ABOUT WITH IMG AND BLOCK
@@ -268,6 +280,12 @@ main
                     flex-wrap: wrap
                     align-items: center
                     justify-content: space-around
+                    @media screen and(max-width: 1024px)
+                        flex-direction: column
+
+                    img
+                        @media screen and(max-width: 1024px)
+                            margin-bottom: 20px
         // STYLES SECOND BLOCK CLIENTS
 
     // SECOND BLOCK
@@ -345,6 +363,12 @@ main
                         max-width: 660px
                         min-height: 753px
                         justify-content: space-around
+                        @media screen and(max-width: 1024px)
+                            flex-direction: column
+
+                        img
+                            @media screen and(max-width: 1024px)
+                                margin-bottom: 10px
 
                     button
                         width: 218px
@@ -391,11 +415,12 @@ main
                     height: 621px
                     display: flex
                     flex-direction: column
-                    flex-wrap: wrap
                     align-items: center
                     background-color: $color4
                     box-shadow: 0 5px 15px 10px rgba(59, 61, 104, 0.3)
                     text-align: center
+                    @media screen and(max-width: 1366px)
+                        margin: 20px 0 20px 0
 
                     p:nth-child(2)
                         font-size: 20px
@@ -431,7 +456,6 @@ main
                     height: 864px
                     display: flex
                     flex-direction: column
-                    flex-wrap: wrap
                     align-items: center
                     background-color: $color4
                     box-shadow: 0 5px 15px 10px rgba(59, 61, 104, 0.3)
@@ -484,4 +508,217 @@ main
 
 
 
+
+//FIFTH BLOCK
+.five
+
+    //STYLES FORM BLOCK
+    .form-main
+        width: 100%
+        background-image: url(../img/form/form-bg.png)
+        background-size: cover
+        background-color: rgba(59, 61, 104, 0.9)
+        min-height: 530px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        p
+            font-size: 40px
+            text-align: center
+            color: $color4
+            margin-bottom: 48px
+
+        button
+            width: 200px
+            height: 48px
+            background-color: $color1
+            border: none
+            border-radius: 40px
+            text-align: center
+            font-size: 15px
+            margin-top: 34px
+
+        .form
+            max-width: 502px
+            min-height: 232px
+            display: flex
+            flex-direction: column
+            @media screen and(max-width: 505px)
+                width: 300px
+
+            form
+
+                input
+                    max-width: 502px
+                    width: 100%
+                    min-height: 46px
+                    margin-bottom: 27px
+                    background-color: #b5b6c6
+                    color: $color2
+                    border: none
+
+                textarea
+                    max-width: 502px
+                    min-height: 88px
+                    background-color: #b5b6c6
+                    color: $color2
+                    border: none
+                    @media screen and(max-width: 505px)
+                        width: 300px
+
+        //STYLES FORM BLOCK
+
+    //FIFTH BLOCK
+
+
+        
 // MAIN
+
+//FOOTER
+footer
+
+    //STYLES FOOTER BLOCK
+    .footer-main
+        background-color: $color2
+        display: flex
+        justify-content: center
+        color: $color4
+
+        .footer-blocks
+            max-width: 1172px
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            align-items: baseline
+            justify-content: space-around
+
+            //STYLES FOOTER BLOCK LOGO AND SOCIAL
+            .footer-logo-social
+                width: 200px
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: center
+                margin-bottom: 30px
+
+                p:nth-child(2)
+                    font-size: 20px
+                    margin: 39px 0 18px 0
+
+                p:nth-child(3)
+                    font-size: 14px
+
+                p:nth-child(4)
+                    font-size: 20px
+                    margin: 44px 0 10px 0
+
+                .header-logo
+                    width: 197px
+                    display: flex
+                    align-items: baseline
+                    font-size: 20px
+                    color: $color4
+
+                    img
+                        margin-right: 9px
+            //STYLES FOOTER BLOCK LOGO AND SOCIAL
+
+            //STYLES FOOTER BLOCK BLOG
+            .footer-blog
+                max-width: 368px
+                width: 100%
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: center
+                margin-bottom: 30px
+
+                p:first-of-type
+                    font-size: 24px
+                    margin-bottom: 28px
+
+                a
+                    font-size: 16px
+                    color: $color4
+
+                .footer-blog-post
+                    display: flex
+                    flex-wrap: wrap
+                    margin-bottom: 28px
+                    align-items: center
+                    justify-content: space-between
+
+                    .footer-post
+                        width: 266px
+                        padding-left: 20px
+
+                        p:nth-child(1)
+                            font-size: 16px
+                            margin: 0
+                            padding-bottom: 10px
+
+                        p:nth-child(2)
+                            font-size: 14px
+
+                            mark
+                                background: none
+                                color: $color4
+                                font-weight: bold
+            //STYLES FOOTER BLOCK BLOG
+
+            //STYLES FOOTER BLOCK QUICK-LINKS
+            .footer-quick-link
+                width: 111px
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 30px
+
+                p
+                    font-size: 24px
+                    margin-bottom: 28px
+
+                .footer-link
+                    display: flex
+                    flex-direction: column
+
+                    a
+                        font-size: 14px
+                        color: $color4
+                        margin-bottom: 18px
+            //STYLES FOOTER BLOCK QUICK-LINKS
+
+            //STYLES FOOTER BLOCK INSTAGRAM UPDATES
+            .footer-instagram
+                width: 202px
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: center
+                margin-bottom: 30px
+
+                p
+                    font-size: 24px
+                    margin-bottom: 28px
+
+                .footer-inst-post
+                    display: flex
+                    width: 202px
+                    height: 97px
+                    align-items: center
+                    justify-content: space-between
+
+                    .footer-inst
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: center
+                        justify-content: space-around
+
+                        img:nth-child(1)
+                            margin-bottom: 10px
+            //STYLES FOOTER BLOCK INSTAGRAM UPDATES
+
+    //STYLES FOOTER BLOCK
+
+//FOOTER
